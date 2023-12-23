@@ -9,3 +9,4 @@ print(x)
 x=torch.rand(3, requires_grad=True)
 #whenever we calculate a computation with this tensor x pytorch will create for us a computational graph
 y=x+2 #this will create the compuational graph 
+ 
