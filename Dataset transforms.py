@@ -27,4 +27,11 @@ class MulTransform:
         inputs, target = sample
         inputs *= self.factor
         return inputs, target
+# Apply only the custom multiplication transform
+composed = MulTransform(2)
 
+# Create dataset instance with transformation
+dataset = WineDataset(transform=composed)
+first_data = dataset[0]
+features, labels = first_data
+print(type(features), type(labels))
