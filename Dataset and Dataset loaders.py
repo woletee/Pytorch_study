@@ -15,4 +15,9 @@ class WineDataset(Dataset):
         return self.x[index], self.y[index]
     def __len__(self):
         return self.n_samples
+# Create dataset instance
+dataset = WineDataset()
+# DataLoader setup
+dataloader = DataLoader(dataset=dataset, batch_size=4, shuffle=True, num_workers=0)
+
 
