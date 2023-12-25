@@ -11,3 +11,11 @@ class WineDataset(Dataset):
         self.y = torch.from_numpy(xy[:, [0]])
         self.n_samples = xy.shape[0]
         self.transform = transform
+    def __getitem__(self, index):
+        sample = self.x[index], self.y[index]
+        if self.transform:
+            sample = self.transform(sample)
+        return sample
+
+    def __len__(self):
+        return self.n_samples
