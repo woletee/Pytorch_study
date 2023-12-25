@@ -22,5 +22,6 @@ dataloader = DataLoader(dataset=dataset, batch_size=4, shuffle=True, num_workers
 # Training loop
 num_epochs = 2
 total_samples = len(dataset)
-
+n_iterations = math.ceil(total_samples / 4)
+print(total_samples, n_iterations)
 
