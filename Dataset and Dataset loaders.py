@@ -19,5 +19,8 @@ class WineDataset(Dataset):
 dataset = WineDataset()
 # DataLoader setup
 dataloader = DataLoader(dataset=dataset, batch_size=4, shuffle=True, num_workers=0)
+# Training loop
+num_epochs = 2
+total_samples = len(dataset)
 
 
