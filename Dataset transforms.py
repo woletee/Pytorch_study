@@ -19,3 +19,12 @@ class WineDataset(Dataset):
 
     def __len__(self):
         return self.n_samples
+class MulTransform:
+    def __init__(self, factor):
+        self.factor = factor
+
+    def __call__(self, sample):
+        inputs, target = sample
+        inputs *= self.factor
+        return inputs, target
+
