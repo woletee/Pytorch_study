@@ -32,3 +32,8 @@ print(f'loss2 numpy:{l2:.4f}')
 #Cross entropy using pytorch 
 loss=nn.CrossEntropyLoss()
 y=torch.tensor([0])
+
+
+y_pred_good=torch.tensor([[2.0,1.0,0.1]])
+y_pred_bad=torch.tensor([[0.5,2.0,0.3]])
+l1=loss(y_pred_good,y)
