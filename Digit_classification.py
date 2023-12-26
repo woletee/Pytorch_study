@@ -73,3 +73,8 @@ with torch.no_grad():
     for images, labels in test_loader:
         images = images.reshape(-1, 28*28).to(device)
         labels = labels.to(device)
+         outputs = model(images)
+        _, predicted = torch.max(outputs, 1)
+        n_samples += labels.size(0)
+        n_correct += (predicted == labels).sum().item()
+
