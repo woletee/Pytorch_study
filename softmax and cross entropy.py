@@ -44,3 +44,6 @@ print(l2.item())
 
 _, prediction1 = torch.max(y_pred_good, dim=0)
 _, prediction2 = torch.max(y_pred_bad, dim=0)
+
+print(prediction1)
+print(prediction2)
