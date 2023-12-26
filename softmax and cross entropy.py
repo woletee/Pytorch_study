@@ -5,3 +5,6 @@ import numpy as np
 def softmax(x):
     return np.exp(x) / np.sum(np.exp(x), axis=0)
 
+
+# Input array
+x_np = np.array([2.0, 1.0, 0.1])
