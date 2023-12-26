@@ -20,7 +20,6 @@ print('Softmax using PyTorch:', outputs_torch)
 def Cross_Entropy(actual,predicted):
     loss=-np.sum(actual*np.log(predicted))
     return loss
-
 y=np.array([1,0,0])
 y_pred_good=np.array([0.7,0.2,0.1])
 y_pred_bad=np.array([0.1,0.3,0.6])
@@ -32,8 +31,9 @@ print(f'loss2 numpy:{l2:.4f}')
 #Cross entropy using pytorch 
 loss=nn.CrossEntropyLoss()
 y=torch.tensor([0])
-
-
 y_pred_good=torch.tensor([[2.0,1.0,0.1]])
 y_pred_bad=torch.tensor([[0.5,2.0,0.3]])
 l1=loss(y_pred_good,y)
+l2=loss(y_pred_bad,y)
+print(l1.item())
+print(l2.item())
