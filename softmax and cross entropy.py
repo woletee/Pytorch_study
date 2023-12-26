@@ -37,3 +37,10 @@ l1=loss(y_pred_good,y)
 l2=loss(y_pred_bad,y)
 print(l1.item())
 print(l2.item())
+# Assuming y_pred_good and y_pred_bad are defined 1D tensors
+
+# y_pred_good = torch.tensor([0.1, 0.2, 0.7])
+# y_pred_bad = torch.tensor([0.1, 0.3, 0.6])
+
+_, prediction1 = torch.max(y_pred_good, dim=0)
+_, prediction2 = torch.max(y_pred_bad, dim=0)
