@@ -15,3 +15,8 @@ print('Softmax using NumPy:', outputs_np)
 x_torch = torch.tensor([2.0, 1.0, 0.1])
 outputs_torch = torch.softmax(x_torch, dim=0)
 print('Softmax using PyTorch:', outputs_torch)
+#Calculating the cross entropy using the numpy 
+#Cross entropy using the numpy 
+def Cross_Entropy(actual,predicted):
+    loss=-np.sum(actual*np.log(predicted))
+    return loss
