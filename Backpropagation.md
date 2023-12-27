@@ -6,7 +6,9 @@
 What is Backpropagation?
 
 - Backpropagation is a fundamental algorithm for training algorithms.
+  
 - It is the mechanism by which neural networks learn from the error of their predictions and adjust their weights to improve performance.
+  
 - There are basically three steps for Backward propagation.
 1. Forward pass: in neural networks data flows through the network from input to output layers ad this process is called forward pass.
     - The network makes predictions based on its current values.
