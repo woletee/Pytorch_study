@@ -1,8 +1,3 @@
-- ![Back propagation](/Images/back1.jpg "Optional title attribute")
-- ![Back propagation](/Images/back2.jpg "Optional title attribute")
-- ![Back propagation](/Images/back3.jpg "Optional title attribute")
-
-
 What is Backpropagation?
 
 - Backpropagation is a fundamental algorithm for training algorithms.
@@ -23,3 +18,13 @@ which is new_weight=old_Weight-learning_Rate(gradient)
 - It computes how much a small change in weight would impact the loss.
 - Weight Update: once the gradiants are calculated the weights would be updated using a simple rule.
 - which is new_weight=old_Weight-learning_Rate(gradient)
+
+
+The detail calculation is given in the below image
+
+
+- ![Back propagation](/Images/back1.jpg "Optional title attribute")
+- ![Back propagation](/Images/back2.jpg "Optional title attribute")
+- ![Back propagation](/Images/back3.jpg "Optional title attribute")
+
+
