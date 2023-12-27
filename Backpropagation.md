@@ -27,4 +27,7 @@ The detail calculation is given in the below image
 - ![Back propagation](/Images/back2.jpg "Optional title attribute")
 - ![Back propagation](/Images/back3.jpg "Optional title attribute")
 
+- 
+- ![Back propagation](/Images/backpropagation.PNG "Optional title attribute")
+
 
