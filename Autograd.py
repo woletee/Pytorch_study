@@ -20,3 +20,16 @@ print(x.grad)
 y=torch.tensor([0.1,1.0,0.001], dtype=torch.float32)
 z.backward()
 print(x.grad)
+
+- ![Autograd](/Images/auto1.jpg "Optional title attribute")
+
+- ![Autograd](/Images/auto2.jpg "Optional title attribute")
+
+
+- ![Autograd](/Images/auto3.jpg "Optional title attribute")
+
+
+- ![Autograd](/Images/auto4.jpg "Optional title attribute")
+
+
+- ![Autograd](/Images/auto5.jpg "Optional title attribute")
