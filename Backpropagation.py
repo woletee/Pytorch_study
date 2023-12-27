@@ -1,2 +1,3 @@
-print("hello world")
-print("hello ethiopia")
+- ![Back propagation](/Images/back1.jpg "Optional title attribute")
+- ![Back propagation](/Images/back2.jpg "Optional title attribute")
+- ![Back propagation](/Images/back3.jpg "Optional title attribute")
