@@ -23,3 +23,17 @@ model = SimpleNet()
 # 3. Loss and optimizer
 criterion = nn.MSELoss()
 optimizer = optim.SGD(model.parameters(), lr=0.01)
+
+# 4. Training loop
+for epoch in range(100):
+    # Forward pass: Compute predicted y by passing x to the model
+    Y_pred = model(X)
+
+    # Compute and print loss
+    loss = criterion(Y_pred, Y)
+    print(f'Epoch {epoch+1}, Loss: {loss.item()}')
+
+    # Zero gradients, backward pass, and update the weights.
+    optimizer.zero_grad()
+    loss.backward()
+    optimizer.step()
