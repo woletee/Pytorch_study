@@ -18,3 +18,8 @@ class SimpleNet(nn.Module):
         x = torch.relu(self.fc1(x))
         x = self.fc2(x)
         return x
+model = SimpleNet()
+
+# 3. Loss and optimizer
+criterion = nn.MSELoss()
+optimizer = optim.SGD(model.parameters(), lr=0.01)
