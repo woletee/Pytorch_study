@@ -29,3 +29,7 @@ plt.xlabel('Epochs')
 plt.ylabel('Loss')
 plt.title('Training Loss Over Time')
 plt.show()
+
+
+from IPython.display import Image
+Image(url="https://example.com/path/to/image.png")
