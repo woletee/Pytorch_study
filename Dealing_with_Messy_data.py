@@ -1,3 +1,4 @@
+#in this code shows how we can deel with the Exploration data analysis process(EDA)
 import pandas as pd
 data=pd.read_csv("energydata_complete.csv")
 data=data.drop(columns=["date"])
