@@ -22,3 +22,4 @@ for i in range(100):
     optimizer.zero_grad()  # Reset gradients to zero before backpropagation
     loss.backward()        # Perform backpropagation to compute gradients
     optimizer.step()
+model.state_dict()
