@@ -49,3 +49,5 @@ Y=data.iloc[:,0]
 #and then to verifiy the result we will display the head of the rescaled data 
 X=(X-X.mean())/ (X.max()-X.min())
 X.head()
+shape = X.shape
+print(shape)
