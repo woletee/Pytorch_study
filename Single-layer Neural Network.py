@@ -32,4 +32,4 @@ plt.show()
 
 
 from IPython.display import Image
-Image(url="https://example.com/path/to/image.png")
+Image(url="/Images/RL.PNG")
