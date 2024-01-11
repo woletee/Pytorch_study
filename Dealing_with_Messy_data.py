@@ -41,3 +41,7 @@ for column_name, percentage in outliers.items():
 #from the above we can see that it is not important to care with the outliers since the % is less than 5 
 #with his we hahve finished the data exploration phase
 data.head()
+#in the next step we will try to scale our data 
+#the first step is to separate the featurs from the target
+X=data.iloc[:,1:]
+Y=data.iloc[:,0]
