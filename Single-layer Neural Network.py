@@ -32,4 +32,4 @@ plt.show()
 
 
 from IPython.display import Image
-Image(url="/Images/RL.PNG")
+Image(url="/Images/loss.png")
