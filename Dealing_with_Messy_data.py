@@ -36,4 +36,6 @@ for column_name in data.columns:
 for column_name, percentage in outliers.items():
     print(f"Percentage of outliers in {column_name}: {percentage}%")
 
-    
+    #the above resulting dictionary displays a list of the featurs in the data set along with their outlirs
+#from the above we can see that it is not important to care with the outliers since the % is less than 5 
+#with his we hahve finished the data exploration phase
