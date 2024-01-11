@@ -45,3 +45,7 @@ data.head()
 #the first step is to separate the featurs from the target
 X=data.iloc[:,1:]
 Y=data.iloc[:,0]
+#next we will rescale the features data by using the normalization methodology
+#and then to verifiy the result we will display the head of the rescaled data 
+X=(X-X.mean())/ (X.max()-X.min())
+X.head()
