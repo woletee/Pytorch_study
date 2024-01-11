@@ -23,3 +23,9 @@ for i in range(100):
     loss.backward()        # Perform backpropagation to compute gradients
     optimizer.step()
 model.state_dict()
+Plotting the losses
+plt.plot(range(100), losses)
+plt.xlabel('Epochs')
+plt.ylabel('Loss')
+plt.title('Training Loss Over Time')
+plt.show()
