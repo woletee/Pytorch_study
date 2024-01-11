@@ -13,3 +13,12 @@ model=nn.Sequential(
 loss_function = torch.nn.MSELoss()
 #this line of the code has defined the optimiaer fo ourt model
 optimizer=torch.optim.Adam(model.parameters(),lr=0.01)
+Training loop
+for i in range(100):
+    y_pred = model(x)                # Generate predictions
+    loss = loss_function(y_pred, y)  # Compute the loss
+    losses.append(loss.item())       # Append the loss value to the list
+    print(loss.item()) 
+    optimizer.zero_grad()  # Reset gradients to zero before backpropagation
+    loss.backward()        # Perform backpropagation to compute gradients
+    optimizer.step()
