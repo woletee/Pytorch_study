@@ -33,3 +33,18 @@ X[:10], y[:10]
 train_split=int(0.8* len(X)) #80 % of the data is used for the trainng 
 X_train , y_train=X[:train_split], y[:train_split]
 X_test, y_test=X[:train_split], y[:train_split]
+len(X_train), len(y_train), len(X_test),len(y_test)
+
+#lets function to visualize the data that we have generated 
+
+def plot_predictions(train_data=X_train, train_labels=y_train,test_data=X_test, test_labels=y_test,predictions=None):
+       plt.figure(figsize=(10,7))
+       
+       #plot training data 
+       plt.scatter(train_data, train_labels, c="b", s=4, label="Trainng data")
+       
+       if predictions is not None:
+           plt.scatter(test_data, predictions, c="r",s=4, label="predictions")
+       
+       plt.legend(prop={"size": 14})
+plot_predictions()
